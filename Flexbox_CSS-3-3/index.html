@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox-Вебсторінка</title>
+    <style>
+        /* Загальні стилі */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1, h2 {
+            margin: 0;
+        }
+
+        /* Шапка */
+        header {
+            background: #0078d7;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Меню навігації */
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+        }
+
+        nav a {
+            color: #fff;
+            padding: 10px 15px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            background: #575757;
+        }
+
+        /* Основний контент */
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .content {
+            background: #e7e1e1;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            flex: 1 1 calc(33.333% - 40px); /* Розмір елемента */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .content h2 {
+            margin-bottom: 18px;
+        }
+
+        /* Футер */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #224e71;
+            color: #fff;
+            margin-top: 20px;
+        }
+
+        /* Мобільна адаптація */
+        @media (max-width: 768px) {
+            .content {
+                flex: 1 1 calc(50% - 40px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .content {
+                flex: 1 1 100%;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                text-align: center;
+                padding: 15px 0;
+                border-top: 1px solid #575757;
+            }
+
+            nav a:first-child {
+                border-top: none;
+            }
+        }
+        .container {
+
+display: flex;
+
+flex-wrap: wrap;
+
+justify-content: space-between;
+
+align-items: center;
+
+}
+
+.item {
+
+width: 200px;
+
+height: 200px;
+
+background-color: rgb(128, 128, 135);
+
+margin: 10px; 
+
+color: white;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+font-size: 20px;
+
+border-radius: 5px;
+
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Flexbox-example.html.</h1>
+        <p>Сторінка з адаптивним дизайном.</p>
+    </header>
+
+    <nav>
+        <a href="#home">Головна</a>
+        <a href="#services">Послуги</a>
+        <a href="#contact">Контакти</a>
+    </nav>
+
+    <main>
+        <div class="content">
+            <h2>Блок 1</h2>
+            <p>Це перший елемент у макеті.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Explicabo esse aliquam tenetur, est minus, quas
+                 commodi facere culpa dolorem laboriosam magnam? Quod, modi eius!
+                  Perferendis pariatur dolorum earum iusto ipsum?
+            </p>
+        </div>
+        <div class="content">
+            <h2>Блок 2</h2>
+            <p>Це другий елемент у макеті.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                 Iure expedita cupiditate temporibus odit culpa officia
+                 reiciendis labore optio ab nulla quod distinctio, ipsa 
+                 delectus eaque sequi? Consequatur voluptatum culpa facere!
+            </p>
+        </div>
+        <div class="content">
+            <h2>Блок 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Ab voluptas modi 
+                quod ipsam, corporis quibusdam rem deleniti quos? 
+                Quam aperiam laudantium ratione aspernatur, consequatur 
+                doloremque natus
+                 repellendus quis molestiae nesciunt!
+            </p>
+        </div>
+        <div class="content">
+            <h2>Блок 4</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Ducimus necessitatibus itaque aut quisquam nihil
+                 cupiditate iusto, impedit beatae! 
+                Officia 
+                commodi aliquam 
+                hic dolorum voluptatum fugit libero error facilis
+                 dignissimos quas?</p>
+        </div>
+        <div class="container">
+
+            <div class="item">Елемент 1</div>
+          
+            <div class="item">Елемент 2</div>
+          
+            <div class="item">Елемент 3</div>
+          
+          </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Flexbox.Вебсторінка.Шленчак Олена. Всі права захищені.</p>
+    </footer>
+</body>
+</html>
+
+</body>
+</html>
