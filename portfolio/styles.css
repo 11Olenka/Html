@@ -1,0 +1,120 @@
+/* Загальні стилі */
+body {
+    background-color: rgb(141, 150, 159);
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Головна сторінка */
+.hero {
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYeKs4vz9G02HwaaNYLup_BXU1TwZUFLxTvA&s') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #392b28;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Навігація */
+.navbar {
+    background: #222;
+    text-align: center;
+    font-family: Georgia, serif;   
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: rgb(240, 232, 232);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Секції */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Проєкти */
+.project-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+  
+/* Навички */
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+/* Контакти */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact input, .contact textarea {
+    width: 50%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+/* Футер */
+.footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.socials a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
